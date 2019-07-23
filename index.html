@@ -10,16 +10,16 @@
 </head>
 
 <body class="text-center">
-        <header class="header" id="myHeader">
-            <img src="./assets/header.svg" alt="headerImg" height="80px">
-        </header>
+    <header class="header" id="myHeader">
+        <img src="./assets/header.svg" alt="headerImg" height="80px">
+    </header>
     <main>
         <div class="wrapper-title mb-2 mt-2">
             <h2 style="color:#C8102E; font-size:42px">FREE
                 <span style="color:black;"> 
                     Bike tour
-                </span></h2>
-            
+                </span>
+            </h2>  
         </div>
         <div class="d-flex flex-column mb-4 pr-2">
             <span class="span-bold description" style="text-transform: uppercase">
@@ -132,7 +132,6 @@
                     </a>
                 </div>
             </div>
-    
         <div class="card-tour">
             <div class="card-img-2">
                 <span class="tour-title text-left pt-3 pl-4 d-flex flex-column">
@@ -156,7 +155,6 @@
                     <img src="./assets/route2.png" alt="route">
                 </div>
             </div>
-           
         </div>
         <div class="wrapper-button d-flex mb-3 mt-4" onclick="showDiv2()">
             <button id="but2" class="button-info mr-2">  
@@ -168,7 +166,6 @@
                 </a>
             </div>
         </div>
-
         <div class="card-tour">
                 <div class="card-img-3">
                     <span class="tour-title text-left pt-3 pl-4 d-flex flex-column">
@@ -342,28 +339,9 @@
     </script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js">
     </script>
+    <script src="./script.js"></script>
 
     <script type="text/javascript">
-        // When the user scrolls the page, execute myFunction 
-        window.onscroll = function () {
-            myFunction()
-        };
-
-        // Get the header
-        var header = document.getElementById("myHeader");
-
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop;
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-
         function showDiv1(){
             document.getElementById("route1").style.display = 'block';
         }
