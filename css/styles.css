@@ -33,9 +33,30 @@ main {
   overflow-x: hidden;
 }
 
+.header {
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.header-menu {
+  display: none;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  padding-right: 1rem;
+}
+
 .sticky {
   background-color: white;
+  justify-content: space-between;
   z-index: 100;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+.sticky .header-menu {
+  display: flex;
 }
 
 .wrapper-imgs {

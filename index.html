@@ -10,8 +10,9 @@
 </head>
 
 <body class="text-center">
-    <header class="header" id="myHeader">
+    <header class="header d-flex" id="myHeader">
         <img src="./assets/header.svg" alt="headerImg" height="80px">
+        <span class="header-menu">Menu</span>
     </header>
     <main>
         <div class="wrapper-title mb-2 mt-2">
@@ -33,16 +34,19 @@
             <img class="img-3" src="./assets/copo_beirao.png" alt="copito">
             <img class="img-4" src="./assets/botelha.png" alt="botelhita">
         </div>
-        <div class="button-book mt-5 mb-5">
+        <div class="button-book mt-1 mb-3">
             <a href="./pages/book-now.html">
                 <img alt="book" src="./assets/book.png">
             </a>
         </div>
-        <img class="mt-4" src="./assets/double_arrow.png" alt="arrow">
+        <div class="arrow-click">
+            <button type="button">
+                <img class="mt-4" src="./assets/double_arrow.png" alt="arrow"> 
+            </button>
+        </div>
     </main>
-
     <section class="beirao pb-4">
-        <h2 class="sub-title pt-0 pb-4">the experience</h2>
+        <h2 class="sub-title experience pt-0 pb-4">the experience</h2>
         <div class="d-flex flex-column mb-3">
             <span class="span-regular">Enjoy <span class="span-bold" style="font-weight: bold; text-transform: uppercase">free </span><span class="span-bold" style="color:#C8102E">Beirão's</span>
                 cocktails while    
@@ -340,6 +344,14 @@
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js">
     </script>
     <script src="./script.js"></script>
+
+    <script>
+        $("button").click(function() {
+            $('html,body').animate({
+        scrollTop: $(".arrow-click").offset().top},
+        'slow');
+});
+    </script>
 
     <script type="text/javascript">
         function showDiv1(){
