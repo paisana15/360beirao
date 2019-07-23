@@ -1,0 +1,292 @@
+/*!
+ * Copyright (C) 2019 Joao Paisana
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+ html,body {
+    margin:0;
+    padding:0;
+    line-height: 19px;
+    font-family: "Roboto", sans-serif;
+} 
+
+main{
+    height: 100vh;
+    padding: 1rem;
+    width: 100%;
+    background-image: url("../assets/background.png");
+    background-color: #FFCD00;
+    background-repeat: no-repeat;
+    background-position: 50% 32%;
+    overflow-x: hidden;
+}
+
+
+.sticky{
+    background-color: white;
+    z-index:100;
+}
+
+.wrapper-imgs{
+    max-width: 100%;
+}
+
+.img-1{
+    height: 300px;
+    margin-left: -13rem;
+}
+
+.img-2{
+    height: 70px;
+    margin-top: 7.5rem;
+    margin-left: -9rem;
+}
+
+.img-3{
+    height: 110px;
+    margin-top: 7rem;
+}
+
+.img-4{
+    height: 200px;
+    margin-left: -2rem;
+    margin-top: 1.5rem;
+}
+
+.social-icons{
+    list-style: none;
+    justify-content: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 2.5rem;
+}
+
+.img-carrinha{
+    width:100%;
+    height: 215px;
+}
+
+.auth{
+    text-transform: uppercase;
+}
+
+.beirao{
+    background-color: #FFCD00;
+}
+.wrapper-offers{
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+.offers{
+    background-color: #C8102E;
+}
+
+.card-img-1{
+    height:9rem;
+    width: 100%;
+    background-image: url("../assets/tour-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img-2{
+    height:9rem;
+    width: 100%;
+    background-image: url("../assets/tour-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-img-3{
+    height:9rem;
+    width: 100%;
+    background-image: url("../assets/tour-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding: 16px; 
+}
+
+.sticky {
+	position: fixed ;
+	top: 0 ;
+    width: 100%; 
+
+    & + .content{ 
+        padding-top: 102px ;
+    }
+}
+
+.offers-desc{
+    font-size: 17px;
+    color: white;
+}
+
+.span-regular{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.span-bold{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2{
+    line-height: 38px;
+    font-weight: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.title-offers{
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFCD00;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h4{
+    line-height: 38px;
+    font-size: 31px;
+}
+
+h5{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.card-title{
+    font-weight: bold;
+    margin:0;
+    color: #FFCD00;
+}
+
+.wrapper-button{
+    justify-content: center;
+}
+
+.info-list{
+    color:white;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.carousel-item{
+    margin-top: 2rem;
+}
+
+.card-tour{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    -webkit-box-shadow: 0px 3px 6px #707070;
+  -moz-box-shadow: 0px 3px 6px#707070;
+  box-shadow: 0px 3px 6px #707070; 
+}
+
+.reviews{
+    background-color: #C8102E;
+    padding-bottom: 1rem;
+}
+
+.find-us{
+    background-color: #C8102E;
+    .social-icons{
+        width:100%;
+        padding-right:3rem;
+        background-color: #FFCD00;
+    }
+}
+
+.tour-title{
+    font-size: 19px;
+    color:white;
+    font-weight: bold;
+}
+
+.tour-number{
+    font-size: 31px;
+    color: white;
+    font-weight: bold;
+}
+
+button{
+    background-color: transparent;
+    border: 0;
+    &:focus{
+        outline:none;
+    }
+}
+
+.route1, .route2{
+    display: none;
+}
+
+
+.active .item-map{
+    color: white!important;
+    &:active,&:hover,&:focus{
+        color: #FFCD00!important;
+        border-bottom: 4px solid white!important;                                                                                                             
+    }
+}
+
+.active{
+    &:focus{
+        outline: 0;
+    }
+}
+
+.item-map{
+    color: white;
+    padding-bottom:1px;
+}
+
+.nav-tabs{
+    justify-content: center;
+    border-bottom: 0!important;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pin-img{
+    margin-top: .7rem;
+}
+
+.sub-title{
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-weight: normal;
+}
+
+.review{
+    color:white;
+}
+
+.title-offers{
+    text-transform: uppercase;
+}
+
+.location{
+    justify-content: center;
+}
