@@ -1,3 +1,20 @@
+<!-- /*!
+ * Copyright (C) 2019 Joao Paisana
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */ -->
+
 <!DOCTYPE html>
 <html>
 
@@ -17,6 +34,13 @@
     <header class="header d-flex" id="myHeader">
         <img src="./assets/header.svg" alt="headerImg" height="80px">
         <span class="header-menu">Menu</span>
+        <div class="header-desktop">
+            <a class="header-item" href="">The experience</a>
+            <a class="header-item" href="">What you'll get</a>
+            <a class="header-item" href="">Tours</a>
+            <a class="header-item" href="">Reviews</a>
+            <a class="header-item" href="">Find us</a>
+        </div>
     </header>
     <main>
         <div class="wrapper-title mb-2 mt-2">
@@ -83,98 +107,112 @@
     <section class="offers pt-2 pb-2">
         <h2 class="sub-title mb-5" style="color: white">what you'll get</h2>
         <div class="wrapper-offers">
-            <img src="./assets/shot.png" alt="shot">
-            <h3 class="title-offers">free SHOTS</h3>
-            <div class="d-flex flex-column mb-5">
-                <span class="offers-desc">Diverse Beirão cocktails.</span>
-                <span class="offers-desc">Because you can.</span>
+            <div class="desktop-offers">
+                <img src="./assets/shot.png" alt="shot" height="132px" width="150px">
+                <h3 class="title-offers">free SHOTS</h3>
+                <div class="d-flex flex-column mb-5">
+                    <span class="offers-desc">Diverse Beirão cocktails.</span>
+                    <span class="offers-desc">Because you can.</span>
+                </div>
             </div>
-            <img src="./assets/bartender.png" alt="barman">
-            <h3 class="title-offers">tour guide</h3>
-            <div class="d-flex flex-column mb-5">
-                <span class="offers-desc">Who will also</span>
-                <span class="offers-desc">prepare your cocktails.</span>
+            <div class="desktop-offers">
+                <img src="./assets/bartender.png" alt="barman" height="132px" width="150px">
+                <h3 class="title-offers">tour guide</h3>
+                <div class="d-flex flex-column mb-5">
+                    <span class="offers-desc">Who will also</span>
+                    <span class="offers-desc">prepare your cocktails.</span>
+                </div>
             </div>
-            <img src="./assets/quiz.png" alt="quiz">
-            <h3 class="title-offers">QUIZZ</h3>
-            <div class="d-flex flex-column mb-5">
-                <span class="offers-desc">Just to make things a little</span>
-                <span class="offers-desc">more interesting.</span>
+            <div class="desktop-offers">
+                <img src="./assets/quiz.png" alt="quiz" height="132px" width="150px">
+                <h3 class="title-offers">QUIZZ</h3>
+                <div class="d-flex flex-column mb-5">
+                    <span class="offers-desc">Just to make things a little</span>
+                    <span class="offers-desc">more interesting.</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="tours pt-2 pb-2">
         <h2 class="sub-title">tours</h2>
-        <div class="card-tour">
-                <div class="card-img-1">
-                    <span class="tour-title text-left pt-3 pl-4 d-flex flex-column">
-                        TOUR
-                        <span class="tour-number mt-0">
-                            #1
+        <div class="desktop-tour">
+            <div class="wrapper-button-desktop">
+            <div class="card-tour">
+                    <div class="card-img-1">
+                        <span class="tour-title text-left pt-3 pl-4 d-flex flex-column">
+                            TOUR
+                            <span class="tour-number mt-0">
+                                #1
+                            </span>
                         </span>
-                    </span>
-                </div>
-                <div class="card-body">
-                    <div class="row pl-3">
-                            <span class="card-title">FROM <span class="span-bold ml-1" style="color: black;">Clérigos
-                                </span></span>
-                            <span class="card-title mb-3" style="margin-left:2.5rem">TO<span class="span-bold ml-1" style="color: black; ">Virtudes</span></span>
                     </div>
-                    <div class="row pl-3">
-                            <span class="card-title row mr-3">DURATION<span class="span-bold ml-1" style="color: black; text-transform: uppercase;">30 min <span
-                                class="span-bold free" style="margin-left:5rem">FREE</span> </span></span>
+                    <div class="card-body">
+                        <div class="row pl-3">
+                                <span class="card-title">FROM <span class="span-bold ml-1" style="color: black;">Clérigos
+                                    </span></span>
+                                <span class="card-title mb-3" style="margin-left:2.5rem">TO<span class="span-bold ml-1" style="color: black; ">Virtudes</span></span>
+                        </div>
+                        <div class="row pl-3">
+                                <span class="card-title row mr-3">DURATION<span class="span-bold ml-1" style="color: black; text-transform: uppercase;">30 min <span
+                                    class="span-bold free" style="margin-left:5rem">FREE</span> </span></span>
+                        </div>
+                        <div id="route1" class="route1">
+                            <img src="./assets/route1.png" alt="route">
+                        </div>
                     </div>
-                    <div id="route1" class="route1">
-                        <img src="./assets/route1.png" alt="route">
+                
+                </div>
+                <div class="wrapper-button d-flex mb-3 mt-4" onclick="showDiv1()">
+                    <div id="but1" class="button-info mr-2">  
+                        <img alt="info" src="./assets/info.png" height="50px">
+                    </div>
+                    <div class="button-book">
+                        <a href="./pages/booking-schedule.html">
+                            <img alt="book" src="./assets/book.png" height="50px">
+                        </a>
                     </div>
                 </div>
-               
             </div>
-            <div class="wrapper-button d-flex mb-3 mt-4" onclick="showDiv1()">
-                <div id="but1" class="button-info mr-2">  
-                    <img alt="info" src="./assets/info.png" height="50px">
-                </div>
-                <div class="button-book">
-                    <a href="./pages/booking-schedule.html">
-                        <img alt="book" src="./assets/book.png" height="50px">
-                    </a>
-                </div>
-            </div>
-        <div class="card-tour">
-            <div class="card-img-2">
-                <span class="tour-title text-left pt-3 pl-4 d-flex flex-column">
-                    TOUR
-                    <span class="tour-number mt-0">
-                        #2
-                    </span>
-                </span>
-            </div>
-            <div class="card-body">
-                <div class="row pl-3">
-                        <span class="card-title">FROM <span class="span-bold ml-1" style="color: black;">Aliados
-                            </span></span>
-                        <span class="card-title mb-3" style="margin-left:2.5rem">TO<span class="span-bold ml-1" style="color: black; ">Ribeira</span></span>
-                </div>
-                <div class="row pl-3">
-                        <span class="card-title row mr-3">DURATION<span class="span-bold ml-1" style="color: black; text-transform: uppercase;">30 min <span
-                            class="span-bold free" style="margin-left:5rem">FREE</span> </span></span>
-                </div>
-                <div id="route2" class="route2">
-                    <img src="./assets/route2.png" alt="route">
-                </div>
-            </div>
-        </div>
-        <div class="wrapper-button d-flex mb-3 mt-4" onclick="showDiv2()">
-            <div id="but2" class="button-info mr-2">  
-                <img alt="info" src="./assets/info.png" height="50px">
-            </div>
-            <div class="button-book">
-                <a href="./pages/booking-schedule.html">
-                    <img alt="book" src="./assets/book.png" height="50px">
-                </a>
-            </div>
-        </div>
+            <div class="wrapper-button-desktop">
+                    <div class="card-tour">
+                            <div class="card-img-2">
+                                <span class="tour-title text-left pt-3 pl-4 d-flex flex-column">
+                                    TOUR
+                                    <span class="tour-number mt-0">
+                                        #2
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row pl-3">
+                                        <span class="card-title">FROM <span class="span-bold ml-1" style="color: black;">Aliados
+                                            </span></span>
+                                        <span class="card-title mb-3" style="margin-left:2.5rem">TO<span class="span-bold ml-1" style="color: black; ">Ribeira</span></span>
+                                </div>
+                                <div class="row pl-3">
+                                        <span class="card-title row mr-3">DURATION<span class="span-bold ml-1" style="color: black; text-transform: uppercase;">30 min <span
+                                            class="span-bold free" style="margin-left:5rem">FREE</span> </span></span>
+                                </div>
+                                <div id="route2" class="route2">
+                                    <img src="./assets/route2.png" alt="route">
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="wrapper-button d-flex mb-3 mt-4" onclick="showDiv2()">
+                            <div id="but2" class="button-info mr-2">  
+                                <img alt="info" src="./assets/info.png" height="50px">
+                            </div>
+                            <div class="button-book">
+                                <a href="./pages/booking-schedule.html">
+                                    <img alt="book" src="./assets/book.png" height="50px">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        <div class="desktop-tour">
+                <div class="wrapper-button-desktop">
         <div class="card-tour">
                 <div class="card-img-3">
                     <span class="tour-title text-left pt-3 pl-4 d-flex flex-column">
@@ -206,6 +244,8 @@
                     </a>
                 </div>
             </div>
+                </div>
+        </div>
     </section>
 
     <section class="reviews pb-4">
@@ -332,35 +372,17 @@
             </li>
         </ul>
     </section>
-    <footer>
+    <footer class="text-center mt-3">
         <div class="pb-3 pt-3">
-            <p class="gray" style="margin-top: -0.5rem;">Terms and Conditions</p>
-            <p class="gray" style="margin-top: -0.5rem;">Privacy Policy</p>
-            <p class="gray" style="margin-top: -0.5rem;">Cookies Policy</p>
+            <a href="" class="gray" style="margin-top: -0.5rem;">Terms and Conditions</a>
+            <a href="" class="gray" style="margin-top: -0.5rem;">Privacy Policy</a>
+            <a href="" class="gray" style="margin-top: -0.5rem;">Cookies Policy</a>
         </div>
-        <p class="gray">&copy; 2019 by Licor Beirão&reg;</p>
+        <p> &copy; 2019 by Licor Beirão&reg; </p>
     </footer>
-
-    <script src="./script.js"></script>
-
-    <script>
-        $("button").click(function() {
-            $('html,body').animate({
-        scrollTop: $(".arrow-click").offset().top},
-        'slow');
-});
-    </script>
-
-    <script type="text/javascript">
-        function showDiv1(){
-            document.getElementById("route1").style.display = 'block';
-        }
-
-        function showDiv2(){
-            document.getElementById("route2").style.display = 'block';
-        }
-    </script>
-</body>
-
-
+    <script src="./scripts/headerScript.js"></script>
+    <script src="./scripts/arrowClick.js"></script>
+    <script src="./scripts/dropDown.js"></script>
+    
+    </body>
 </html>
